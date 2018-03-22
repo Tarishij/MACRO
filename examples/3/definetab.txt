@@ -1,0 +1,10 @@
+using_printf 
+  push ebp
+    mov ebp,esp
+    push a
+    call printf
+    add esp,4
+    mov esp,ebp
+    pop ebp
+    ret
+...
