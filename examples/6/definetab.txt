@@ -1,0 +1,17 @@
+Mac1 
+  print("this is 1st macro")
+  Mac2 
+  print("this is 1st's inner macro")
+  print("again in outer macro of 1st")
+...
+  Mac2 
+  print("this is 1st's inner macro")
+...
+Mac3 
+ print("this is another nested macro")
+ Mac4 
+ print("this is its inner part")
+...
+ Mac4 
+ print("this is its inner part")
+...

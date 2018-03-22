@@ -1,0 +1,8 @@
+Main body:
+print("python nested macro:")
+  print("this is 1st macro")
+  print("this is 1st's inner macro")
+  print("again in outer macro of 1st")
+ print("this is another nested macro")
+ print("this is its inner part")
+
