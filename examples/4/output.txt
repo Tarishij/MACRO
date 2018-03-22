@@ -1,0 +1,8 @@
+Main body:
+#include<stdio.h>
+void main()
+{
+print(greater: 5)
+}
+
+

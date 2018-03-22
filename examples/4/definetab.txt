@@ -1,0 +1,8 @@
+largest  (&arg1,&arg2)
+if(?1> ?2)
+print(greater no is:?1)
+else
+print(greater: ?2)
+endif
+
+...
