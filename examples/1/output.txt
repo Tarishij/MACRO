@@ -1,0 +1,6 @@
+Main body:
+no1=4
+no2=2
+res= 4+2
+print("Add result:"+res)
+
