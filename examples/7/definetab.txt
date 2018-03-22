@@ -1,0 +1,8 @@
+Mac1  (&arg1,&arg2)
+printf("first no:%d",?1);
+ Mac2  (&arg2)
+printf("second no:%d",?2);
+...
+ Mac2  (&arg2)
+printf("second no:%d",?2);
+...

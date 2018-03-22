@@ -1,0 +1,9 @@
+Main body:
+#include<stdio.h>
+void main()
+{
+printf("first no:%d",2);
+printf("second no:%d",5);
+}
+
+
