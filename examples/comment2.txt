@@ -1,0 +1,11 @@
+!# A MACRO 4
+!# MEND
+A MACRO 2
+MEND
+
+Main body:
+#include<stdio.h>
+void main()
+{
+printf("the new value of macro is %d",A());
+}

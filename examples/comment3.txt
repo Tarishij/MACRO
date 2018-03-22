@@ -1,0 +1,29 @@
+using_printf MACRO
+  push ebp
+    mov ebp,esp
+    push a
+    call printf
+    add esp,4
+    mov esp,ebp
+    pop ebp
+    ret
+MEND
+
+Main body:
+Section .data
+a dd 2
+
+Section .text
+global main
+!#extern printf
+main:
+    mov eax,4
+    mov ebx,1
+    mov ecx,a
+    mov edx,1
+    int 0x80
+
+    !#using_printf
+
+    mov eax,1
+    int 0x80
