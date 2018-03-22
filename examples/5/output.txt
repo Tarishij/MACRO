@@ -1,0 +1,9 @@
+Main body:
+#include<stdio.h>
+void main()
+{
+printf("addition of 2 no's:\n");
+int r=5+4+2;
+}
+
+
