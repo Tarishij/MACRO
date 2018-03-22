@@ -1,0 +1,10 @@
+Out 
+print db "NASM CODE",10,0
+len equ $- print
+...
+convert_in_integer  (&arg1,&arg2)
+mov eax,?1
+   sub eax,'0'
+mov eax,?2
+   sub ebx,'0'
+...

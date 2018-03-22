@@ -1,0 +1,28 @@
+Main body:
+SECTION .data
+a dd '1'
+b dd '2'
+print db "NASM CODE",10,0
+len equ $- print
+
+SECTION .text
+global main
+main:
+
+
+
+   mov eax,4
+   mov ebx,1
+   mov ecx,print
+   mov edx len
+   int 80h
+
+mov eax,a
+   sub eax,'0'
+mov eax,b
+   sub ebx,'0'
+
+   mov eax,1
+   mov ebx,0
+   int 80h
+
