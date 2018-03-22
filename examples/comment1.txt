@@ -1,0 +1,11 @@
+Addition MACRO (&arg1,&arg2)
+res= &arg1 + &arg2
+print("Add result:"+res)
+MEND
+
+Main body:
+!#comment goes
+!#here
+no1=4
+no2=2
+Addition (4,2)
