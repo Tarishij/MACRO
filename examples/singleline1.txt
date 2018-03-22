@@ -1,0 +1,8 @@
+A MACRO 5
+MEND
+Main body:
+#include<stdio.h>
+void main()
+{
+printf("%d",A());
+}
