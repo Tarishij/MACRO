@@ -1,0 +1,14 @@
+power MACRO (&arg1,&arg2)
+f=1;
+for (i=1;i<=&arg2;i++)
+f=f*&arg1;
+printf("%d",f);
+    MEND
+Main body:
+#include<stdio.h>
+void main(){
+    a=4;
+    b=2;
+    printf("a^b is:");
+    power (2,4);
+}

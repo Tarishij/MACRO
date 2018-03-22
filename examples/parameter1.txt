@@ -1,0 +1,5 @@
+Mac MACRO (&arg1)
+print(&arg1)
+MEND
+Main body:
+Mac (2)

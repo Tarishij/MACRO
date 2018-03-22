@@ -1,0 +1,12 @@
+sum MACRO (&arg1,&arg2=4,&arg3)
+!# two argumnets must be separated and should not constitute  a single word
+int r=&arg1 + &arg2 + &arg3;
+MEND
+Main body:
+#include<stdio.h>
+void main()
+{
+printf("addition of 2 no's:\n");
+sum (5,,2);
+}
+

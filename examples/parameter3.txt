@@ -1,0 +1,35 @@
+Out MACRO
+print db "NASM CODE",10,0
+len equ $- print
+MEND
+
+convert_in_integer MACRO (&arg1,&arg2)
+   mov eax,&arg1
+   sub eax,'0'
+   mov eax,&arg2
+   sub ebx,'0'
+MEND
+
+Main body:
+SECTION .data
+a dd '1'
+b dd '2'
+Out
+
+SECTION .text
+global main
+main:
+
+
+
+   mov eax,4
+   mov ebx,1
+   mov ecx,print
+   mov edx len
+   int 80h
+
+   convert_in_integer (a,b)
+
+   mov eax,1
+   mov ebx,0
+   int 80h

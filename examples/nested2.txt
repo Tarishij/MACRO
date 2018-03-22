@@ -1,0 +1,13 @@
+Mac1 MACRO (&arg1,&arg2)
+printf("first no:%d",&arg1);
+ Mac2 MACRO (&arg2)
+ printf("second no:%d",&arg2);
+ MEND
+MEND
+Main body:
+#include<stdio.h>
+void main()
+{
+Mac1 (2,5);
+}
+

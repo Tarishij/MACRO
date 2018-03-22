@@ -1,0 +1,15 @@
+largest MACRO (&arg1,&arg2)
+if(&arg1 > &arg2)
+  print(greater no is:&arg1)
+else
+  print(greater: &arg2)
+endif
+
+MEND
+Main body:
+#include<stdio.h>
+void main()
+{
+largest (3,5);
+}
+

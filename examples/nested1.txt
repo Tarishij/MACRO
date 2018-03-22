@@ -1,0 +1,17 @@
+Mac1 MACRO
+  print("this is 1st macro")
+  Mac2 MACRO
+  print("this is 1st's inner macro")
+  MEND
+  print("again in outer macro of 1st")
+MEND
+Mac3 MACRO
+ print("this is another nested macro")
+ Mac4 MACRO
+ print("this is its inner part")
+ MEND
+MEND
+Main body:
+print("python nested macro:")
+Mac1
+Mac3
